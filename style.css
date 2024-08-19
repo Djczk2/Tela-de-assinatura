@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inspire, sans-serif;
+}
+
+body{
+    background-color: #040714;
+}
+
+:root {
+    --branco-principal: #fff;
+    --botao-azul: #02D6E8;
+}
+
+.bnt {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.6s;
+    border: 1px solid silver;
+}
+
+.nav-bar {
+    margin: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bnt-3 {
+    display: flex;
+    gap: 22px; 
+}
+
+.bnt-4 {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: #02172a;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.bnt-4:hover {
+    background-color: rgb(150, 150, 150);
+    color: black;
+}
+
+.text {
+    color: white;
+    max-width: 50%;
+    padding: 2vw; 
+}
+
+.texto-3 {
+    gap: 12px;
+    color: gray;
+    margin: 10px;
+    max-width: 400px;
+    display: flex;
+}
+
+.container {
+    background-color: #040714;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    height: calc(100vh - 50px);
+}
+
+.backgroud img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: -20px; 
+}
+
+.text h1 {
+    margin: 10px;
+    font-size: 50px;
+    margin-top: -10px; 
+}
+
+.text h3 {
+    margin: 10px;
+    font-size: 28px;
+    margin-top: -15px; 
+}
+
+.text img {
+    width: 10%;
+}
+
+.bnt:hover {
+    background-color: white;
+    color: black;
+}
+
+/* banner-2*/
+
+
+.section-background {
+    background-image: url('img/background-2.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh; 
+}
+
+.container4{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    padding-left: 5vw;
+    top: 50px;
+    width: 40%;
+}
+
+
+.container4 p{
+    margin: 28px;
+    color: white;
+}
+
+.paragrafo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/*banner3*/
+
+.section-background3{
+    background-image: url('img/background3.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh;
+}
+
+
+.container5{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: -75px;
+    padding-left: 5vw;
+    top: 165px;
+    width: 40%;
+    color: #ffffff;
+}
+
+
+.paragrafo3{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.paragrafo4{
+   font-weight: 400;
+    margin-top: 24px;
+}
+
+/*banner3*/
+
+.section-background4{
+    background-image: url('img/original.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+    padding: 2vw;
+}
+.container6{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.paragrafo5{
+    font-weight: 700;
+    font-size: 40px;
+}
+.paragrafo6{
+    margin-top: 30px;
+}
+
+.container, .section-background, .section-background3, .section-background4 {
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+@media (max-width: 768px) {
+    .text, .container4, .container5, .container6 {
+        max-width: 100%; 
+        padding: 20px; 
+    }
+
+    .text img {
+        width: 80%; 
+    }
+
+    .text h1 {
+        font-size: 36px; 
+    }
+
+    .text h3 {
+        font-size: 24px;
+    }
+
+    .bnt-3 {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .container4, .container5 {
+        align-items: center; 
+        padding-left: 0; 
+        width: 90%; 
+    }
+
+    .section-background, .section-background3, .section-background4 {
+        background-position: top center; 
+        height: auto; 
+    }
+
+    .container4 p, .container5 p {
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .text h3 {
+        font-size: 20px;
+    }
+
+    .bnt {
+        font-size: 16px; 
+    }
+
+    .paragrafo {
+        font-size: 22px; 
+    }
+
+    .paragrafo3 {
+        font-size: 32px; 
+    }
+}
+
+
